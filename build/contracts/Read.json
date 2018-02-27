@@ -1,0 +1,2764 @@
+{
+  "contractName": "Read",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_p",
+          "type": "uint8"
+        },
+        {
+          "name": "_dir",
+          "type": "bool"
+        },
+        {
+          "name": "_e",
+          "type": "uint32"
+        }
+      ],
+      "name": "read9090",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get7070",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get9090",
+      "outputs": [
+        {
+          "name": "_p",
+          "type": "uint8"
+        },
+        {
+          "name": "_dir",
+          "type": "bool"
+        },
+        {
+          "name": "_e",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "get8080",
+      "outputs": [
+        {
+          "name": "_p",
+          "type": "int8"
+        },
+        {
+          "name": "_ti",
+          "type": "uint32"
+        },
+        {
+          "name": "_te",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "name": "_p",
+          "type": "int8"
+        },
+        {
+          "name": "_ti",
+          "type": "uint32"
+        },
+        {
+          "name": "_te",
+          "type": "uint32"
+        }
+      ],
+      "name": "read8080",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_mc",
+          "type": "uint8"
+        }
+      ],
+      "name": "read7070",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b73__lib8080_______________________________63b71ae2f86001600b6040517c010000000000000000000000000000000000000000000000000000000063ffffffff85160281526004810192909252602482015260440160006040518083038186803b151561007f57600080fd5b6102c65a03f4151561009057600080fd5b505050600173__lib8080_______________________________63b71ae2f89091600c6040517c010000000000000000000000000000000000000000000000000000000063ffffffff85160281526004810192909252602482015260440160006040518083038186803b151561010557600080fd5b6102c65a03f4151561011657600080fd5b5050506103de806101286000396000f30060606040526004361061005e5763ffffffff60e060020a6000350416630104101081146100635780630253f21d1461008c5780632a788bb0146100b55780638eafe828146100f6578063b413eff11461013d578063e9cd4a7714610168575b600080fd5b341561006e57600080fd5b61008a60ff60043516602435151563ffffffff60443516610181565b005b341561009757600080fd5b61009f610215565b60405160ff909116815260200160405180910390f35b34156100c057600080fd5b6100c861022d565b60405160ff9093168352901515602083015263ffffffff166040808301919091526060909101905180910390f35b341561010157600080fd5b61010c60043561025d565b604051600093840b90930b835263ffffffff9182166020840152166040808301919091526060909101905180910390f35b341561014857600080fd5b61008a60043560243560000b63ffffffff60443581169060643516610298565b341561017357600080fd5b61008a60ff60043516610335565b73__lib9090_______________________________63de09911260034286868660405163ffffffff87811660e060020a0282526004820196909652602481019490945260ff92909216604484015215156064830152909116608482015260a40160006040518083038186803b15156101f857600080fd5b6102c65a03f4151561020957600080fd5b50504260065550505050565b60045460009081526020819052604090205460ff1690565b60065460009081526003602052604090205460ff8082169261010083049091169162010000900463ffffffff1690565b600090815260026020908152604080832060055484529091528120549081900b9163ffffffff61010083048116926501000000000090041690565b73__lib8080_______________________________63a430b2896001428787878760405163ffffffff88811660e060020a028252600482019790975260248101959095526044850193909352600091820b820b606485015284166084840152921660a482015260c401906040518083038186803b151561031757600080fd5b6102c65a03f4151561032857600080fd5b5050426005555050505050565b73__lib7070_______________________________63c546ade36000428460405160e060020a63ffffffff86160281526004810193909352602483019190915260ff16604482015260640160006040518083038186803b151561039757600080fd5b6102c65a03f415156103a857600080fd5b50504260045550505600a165627a7a72305820e5d539c25120859b8fae591db29aab5d5a2ce618a84c8e7828e61d93c038bd120029",
+  "deployedBytecode": "0x60606040526004361061005e5763ffffffff60e060020a6000350416630104101081146100635780630253f21d1461008c5780632a788bb0146100b55780638eafe828146100f6578063b413eff11461013d578063e9cd4a7714610168575b600080fd5b341561006e57600080fd5b61008a60ff60043516602435151563ffffffff60443516610181565b005b341561009757600080fd5b61009f610215565b60405160ff909116815260200160405180910390f35b34156100c057600080fd5b6100c861022d565b60405160ff9093168352901515602083015263ffffffff166040808301919091526060909101905180910390f35b341561010157600080fd5b61010c60043561025d565b604051600093840b90930b835263ffffffff9182166020840152166040808301919091526060909101905180910390f35b341561014857600080fd5b61008a60043560243560000b63ffffffff60443581169060643516610298565b341561017357600080fd5b61008a60ff60043516610335565b73__lib9090_______________________________63de09911260034286868660405163ffffffff87811660e060020a0282526004820196909652602481019490945260ff92909216604484015215156064830152909116608482015260a40160006040518083038186803b15156101f857600080fd5b6102c65a03f4151561020957600080fd5b50504260065550505050565b60045460009081526020819052604090205460ff1690565b60065460009081526003602052604090205460ff8082169261010083049091169162010000900463ffffffff1690565b600090815260026020908152604080832060055484529091528120549081900b9163ffffffff61010083048116926501000000000090041690565b73__lib8080_______________________________63a430b2896001428787878760405163ffffffff88811660e060020a028252600482019790975260248101959095526044850193909352600091820b820b606485015284166084840152921660a482015260c401906040518083038186803b151561031757600080fd5b6102c65a03f4151561032857600080fd5b5050426005555050505050565b73__lib7070_______________________________63c546ade36000428460405160e060020a63ffffffff86160281526004810193909352602483019190915260ff16604482015260640160006040518083038186803b151561039757600080fd5b6102c65a03f415156103a857600080fd5b50504260045550505600a165627a7a72305820e5d539c25120859b8fae591db29aab5d5a2ce618a84c8e7828e61d93c038bd120029",
+  "sourceMap": "99:1256:1:-;;;331:101;;;;;;;;379:17;;:4;397:2;379:21;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;379:21:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;406:4;:17;;;;424:2;406:21;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;406:21:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;99:1256;;;;;;",
+  "deployedSourceMap": "99:1256:1:-;;;;;;;;;-1:-1:-1;;;99:1256:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;674:122;;;;;;;;;;;;;;;;;;;;;;;;;;800:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1146:207;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;904:238;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;532:138;;;;;;;;;;;;;;;;;;;;;;;;;;;436:92;;;;;;;;;;;;;;;;674:122;737:14;;:4;752:3;757:2;761:4;767:2;737:33;;;;;;-1:-1:-1;;;737:33:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;737:33:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;788:3:1;776:9;:15;-1:-1:-1;;;;674:122:1:o;800:100::-;874:9;;840:5;860:24;;;;;;;;;;:35;;;800:100;:::o;1146:207::-;1243:9;;1186:8;1229:24;;;:4;:24;;;;;:30;;;;;;;1272:34;;;;;;1317:31;;;;;;1146:207::o;904:238::-;952:7;996:18;;;:13;:18;;;;;;;;1015:9;;996:29;;;;;;;:35;;;;;;1043:41;996:35;1043:41;;;;;1096;;;;;904:238::o;532:138::-;606:14;;:4;621:3;626;631:2;635:3;640;606:38;;;;;;-1:-1:-1;;;606:38:1;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;606:38:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;662:3:1;650:9;:15;-1:-1:-1;;;;;532:138:1:o;436:92::-;478:14;;:4;493:3;498;478:24;;-1:-1:-1;;;478:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;478:24:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;520:3:1;508:9;:15;-1:-1:-1;;436:92:1:o",
+  "source": "pragma solidity ^0.4.16;\n\nimport \"./lib7070.sol\";\nimport \"./lib8080.sol\";\nimport \"./lib9090.sol\";\n\ncontract Read {\n\n  using lib7070 for *;\n  using lib8080 for *;\n  using lib9090 for *;\n\n  lib7070.input7070Map map7;\n  lib8080.input8080Map map8;\n  lib9090.input9090Map map9;\n\n  uint tempNow_7;\n  uint tempNow_8;\n  uint tempNow_9;\n\n  function Read() public {\n    // constructor\n    map8.setAllowedID(11);\n    map8.setAllowedID(12);\n  }\n\n  function read7070(uint8 _mc) public {\n    map7.readInput(now, _mc);\n    tempNow_7 = now;\n  }\n\n  function read8080(uint _id, int8 _p, uint32 _ti, uint32 _te) public {\n    map8.readInput(now, _id, _p, _ti, _te);\n    tempNow_8 = now;\n  }\n\n  function read9090(uint8 _p, bool _dir, uint32 _e) public {\n    map9.readInput(now, _p, _dir, _e);\n    tempNow_9 = now;\n  }\n\n  function get7070() view public returns (uint8) {\n    return map7.inputMap[tempNow_7].maxCurrent;\n  }\n\n  function get8080(uint _id) view public returns (int8 _p, uint32 _ti, uint32 _te) {\n    _p = map8.inputMap[_id][tempNow_8].power;\n    _ti = map8.inputMap[_id][tempNow_8].totalImport;\n    _te = map8.inputMap[_id][tempNow_8].totalExport;\n  }\n\n  function get9090() view public returns (uint8 _p, bool _dir, uint32 _e) {\n    _p = map9.inputMap[tempNow_9].power;\n    _dir = map9.inputMap[tempNow_9].direction;\n    _e = map9.inputMap[tempNow_9].energy;\n  }\n}\n",
+  "sourcePath": "C:\\Users\\qianc\\Documents\\Selber\\selber_eth_poc\\contracts\\Read.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Users/qianc/Documents/Selber/selber_eth_poc/contracts/Read.sol",
+      "exportedSymbols": {
+        "Read": [
+          250
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".16"
+          ]
+        },
+        "id": 58,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 282,
+          "absolutePath": "/C/Users/qianc/Documents/Selber/selber_eth_poc/contracts/lib7070.sol",
+          "file": "./lib7070.sol",
+          "scope": 251,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 59,
+        "name": "ImportDirective",
+        "src": "26:23:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 358,
+          "absolutePath": "/C/Users/qianc/Documents/Selber/selber_eth_poc/contracts/lib8080.sol",
+          "file": "./lib8080.sol",
+          "scope": 251,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 60,
+        "name": "ImportDirective",
+        "src": "50:23:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 399,
+          "absolutePath": "/C/Users/qianc/Documents/Selber/selber_eth_poc/contracts/lib9090.sol",
+          "file": "./lib9090.sol",
+          "scope": 251,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 61,
+        "name": "ImportDirective",
+        "src": "74:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            250
+          ],
+          "name": "Read",
+          "scope": 251
+        },
+        "children": [
+          {
+            "attributes": {
+              "typeName": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "lib7070",
+                  "referencedDeclaration": 281,
+                  "type": "library lib7070"
+                },
+                "id": 62,
+                "name": "UserDefinedTypeName",
+                "src": "124:7:1"
+              }
+            ],
+            "id": 63,
+            "name": "UsingForDirective",
+            "src": "118:20:1"
+          },
+          {
+            "attributes": {
+              "typeName": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "lib8080",
+                  "referencedDeclaration": 357,
+                  "type": "library lib8080"
+                },
+                "id": 64,
+                "name": "UserDefinedTypeName",
+                "src": "147:7:1"
+              }
+            ],
+            "id": 65,
+            "name": "UsingForDirective",
+            "src": "141:20:1"
+          },
+          {
+            "attributes": {
+              "typeName": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "lib9090",
+                  "referencedDeclaration": 398,
+                  "type": "library lib9090"
+                },
+                "id": 66,
+                "name": "UserDefinedTypeName",
+                "src": "170:7:1"
+              }
+            ],
+            "id": 67,
+            "name": "UsingForDirective",
+            "src": "164:20:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "map7",
+              "scope": 250,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct lib7070.input7070Map storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "lib7070.input7070Map",
+                  "referencedDeclaration": 260,
+                  "type": "struct lib7070.input7070Map storage pointer"
+                },
+                "id": 68,
+                "name": "UserDefinedTypeName",
+                "src": "188:20:1"
+              }
+            ],
+            "id": 69,
+            "name": "VariableDeclaration",
+            "src": "188:25:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "map8",
+              "scope": 250,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct lib8080.input8080Map storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "lib8080.input8080Map",
+                  "referencedDeclaration": 301,
+                  "type": "struct lib8080.input8080Map storage pointer"
+                },
+                "id": 70,
+                "name": "UserDefinedTypeName",
+                "src": "217:20:1"
+              }
+            ],
+            "id": 71,
+            "name": "VariableDeclaration",
+            "src": "217:25:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "map9",
+              "scope": 250,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct lib9090.input9090Map storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "lib9090.input9090Map",
+                  "referencedDeclaration": 371,
+                  "type": "struct lib9090.input9090Map storage pointer"
+                },
+                "id": 72,
+                "name": "UserDefinedTypeName",
+                "src": "246:20:1"
+              }
+            ],
+            "id": 73,
+            "name": "VariableDeclaration",
+            "src": "246:25:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "tempNow_7",
+              "scope": 250,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 74,
+                "name": "ElementaryTypeName",
+                "src": "276:4:1"
+              }
+            ],
+            "id": 75,
+            "name": "VariableDeclaration",
+            "src": "276:14:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "tempNow_8",
+              "scope": 250,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 76,
+                "name": "ElementaryTypeName",
+                "src": "294:4:1"
+              }
+            ],
+            "id": 77,
+            "name": "VariableDeclaration",
+            "src": "294:14:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "tempNow_9",
+              "scope": 250,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 78,
+                "name": "ElementaryTypeName",
+                "src": "312:4:1"
+              }
+            ],
+            "id": 79,
+            "name": "VariableDeclaration",
+            "src": "312:14:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "Read",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 80,
+                "name": "ParameterList",
+                "src": "344:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 81,
+                "name": "ParameterList",
+                "src": "354:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_rational_11_by_1",
+                                  "typeString": "int_const 11"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "setAllowedID",
+                              "referencedDeclaration": 356,
+                              "type": "function (struct lib8080.input8080Map storage pointer,uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 71,
+                                  "type": "struct lib8080.input8080Map storage ref",
+                                  "value": "map8"
+                                },
+                                "id": 82,
+                                "name": "Identifier",
+                                "src": "379:4:1"
+                              }
+                            ],
+                            "id": 84,
+                            "name": "MemberAccess",
+                            "src": "379:17:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "3131",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 11",
+                              "value": "11"
+                            },
+                            "id": 85,
+                            "name": "Literal",
+                            "src": "397:2:1"
+                          }
+                        ],
+                        "id": 86,
+                        "name": "FunctionCall",
+                        "src": "379:21:1"
+                      }
+                    ],
+                    "id": 87,
+                    "name": "ExpressionStatement",
+                    "src": "379:21:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_rational_12_by_1",
+                                  "typeString": "int_const 12"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "setAllowedID",
+                              "referencedDeclaration": 356,
+                              "type": "function (struct lib8080.input8080Map storage pointer,uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 71,
+                                  "type": "struct lib8080.input8080Map storage ref",
+                                  "value": "map8"
+                                },
+                                "id": 88,
+                                "name": "Identifier",
+                                "src": "406:4:1"
+                              }
+                            ],
+                            "id": 90,
+                            "name": "MemberAccess",
+                            "src": "406:17:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "3132",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 12",
+                              "value": "12"
+                            },
+                            "id": 91,
+                            "name": "Literal",
+                            "src": "424:2:1"
+                          }
+                        ],
+                        "id": 92,
+                        "name": "FunctionCall",
+                        "src": "406:21:1"
+                      }
+                    ],
+                    "id": 93,
+                    "name": "ExpressionStatement",
+                    "src": "406:21:1"
+                  }
+                ],
+                "id": 94,
+                "name": "Block",
+                "src": "354:78:1"
+              }
+            ],
+            "id": 95,
+            "name": "FunctionDefinition",
+            "src": "331:101:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "read7070",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_mc",
+                      "scope": 112,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 96,
+                        "name": "ElementaryTypeName",
+                        "src": "454:5:1"
+                      }
+                    ],
+                    "id": 97,
+                    "name": "VariableDeclaration",
+                    "src": "454:9:1"
+                  }
+                ],
+                "id": 98,
+                "name": "ParameterList",
+                "src": "453:11:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 99,
+                "name": "ParameterList",
+                "src": "472:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint8",
+                                  "typeString": "uint8"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "readInput",
+                              "referencedDeclaration": 280,
+                              "type": "function (struct lib7070.input7070Map storage pointer,uint256,uint8)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 69,
+                                  "type": "struct lib7070.input7070Map storage ref",
+                                  "value": "map7"
+                                },
+                                "id": 100,
+                                "name": "Identifier",
+                                "src": "478:4:1"
+                              }
+                            ],
+                            "id": 102,
+                            "name": "MemberAccess",
+                            "src": "478:14:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 412,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 103,
+                            "name": "Identifier",
+                            "src": "493:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 97,
+                              "type": "uint8",
+                              "value": "_mc"
+                            },
+                            "id": 104,
+                            "name": "Identifier",
+                            "src": "498:3:1"
+                          }
+                        ],
+                        "id": 105,
+                        "name": "FunctionCall",
+                        "src": "478:24:1"
+                      }
+                    ],
+                    "id": 106,
+                    "name": "ExpressionStatement",
+                    "src": "478:24:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 75,
+                              "type": "uint256",
+                              "value": "tempNow_7"
+                            },
+                            "id": 107,
+                            "name": "Identifier",
+                            "src": "508:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 412,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 108,
+                            "name": "Identifier",
+                            "src": "520:3:1"
+                          }
+                        ],
+                        "id": 109,
+                        "name": "Assignment",
+                        "src": "508:15:1"
+                      }
+                    ],
+                    "id": 110,
+                    "name": "ExpressionStatement",
+                    "src": "508:15:1"
+                  }
+                ],
+                "id": 111,
+                "name": "Block",
+                "src": "472:56:1"
+              }
+            ],
+            "id": 112,
+            "name": "FunctionDefinition",
+            "src": "436:92:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "read8080",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_id",
+                      "scope": 138,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 113,
+                        "name": "ElementaryTypeName",
+                        "src": "550:4:1"
+                      }
+                    ],
+                    "id": 114,
+                    "name": "VariableDeclaration",
+                    "src": "550:8:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_p",
+                      "scope": 138,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int8",
+                          "type": "int8"
+                        },
+                        "id": 115,
+                        "name": "ElementaryTypeName",
+                        "src": "560:4:1"
+                      }
+                    ],
+                    "id": 116,
+                    "name": "VariableDeclaration",
+                    "src": "560:7:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_ti",
+                      "scope": 138,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 117,
+                        "name": "ElementaryTypeName",
+                        "src": "569:6:1"
+                      }
+                    ],
+                    "id": 118,
+                    "name": "VariableDeclaration",
+                    "src": "569:10:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_te",
+                      "scope": 138,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 119,
+                        "name": "ElementaryTypeName",
+                        "src": "581:6:1"
+                      }
+                    ],
+                    "id": 120,
+                    "name": "VariableDeclaration",
+                    "src": "581:10:1"
+                  }
+                ],
+                "id": 121,
+                "name": "ParameterList",
+                "src": "549:43:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 122,
+                "name": "ParameterList",
+                "src": "600:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_int8",
+                                  "typeString": "int8"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "readInput",
+                              "referencedDeclaration": 340,
+                              "type": "function (struct lib8080.input8080Map storage pointer,uint256,uint256,int8,uint32,uint32)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 71,
+                                  "type": "struct lib8080.input8080Map storage ref",
+                                  "value": "map8"
+                                },
+                                "id": 123,
+                                "name": "Identifier",
+                                "src": "606:4:1"
+                              }
+                            ],
+                            "id": 125,
+                            "name": "MemberAccess",
+                            "src": "606:14:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 412,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 126,
+                            "name": "Identifier",
+                            "src": "621:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 114,
+                              "type": "uint256",
+                              "value": "_id"
+                            },
+                            "id": 127,
+                            "name": "Identifier",
+                            "src": "626:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 116,
+                              "type": "int8",
+                              "value": "_p"
+                            },
+                            "id": 128,
+                            "name": "Identifier",
+                            "src": "631:2:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 118,
+                              "type": "uint32",
+                              "value": "_ti"
+                            },
+                            "id": 129,
+                            "name": "Identifier",
+                            "src": "635:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 120,
+                              "type": "uint32",
+                              "value": "_te"
+                            },
+                            "id": 130,
+                            "name": "Identifier",
+                            "src": "640:3:1"
+                          }
+                        ],
+                        "id": 131,
+                        "name": "FunctionCall",
+                        "src": "606:38:1"
+                      }
+                    ],
+                    "id": 132,
+                    "name": "ExpressionStatement",
+                    "src": "606:38:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 77,
+                              "type": "uint256",
+                              "value": "tempNow_8"
+                            },
+                            "id": 133,
+                            "name": "Identifier",
+                            "src": "650:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 412,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 134,
+                            "name": "Identifier",
+                            "src": "662:3:1"
+                          }
+                        ],
+                        "id": 135,
+                        "name": "Assignment",
+                        "src": "650:15:1"
+                      }
+                    ],
+                    "id": 136,
+                    "name": "ExpressionStatement",
+                    "src": "650:15:1"
+                  }
+                ],
+                "id": 137,
+                "name": "Block",
+                "src": "600:70:1"
+              }
+            ],
+            "id": 138,
+            "name": "FunctionDefinition",
+            "src": "532:138:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "read9090",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_p",
+                      "scope": 161,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 139,
+                        "name": "ElementaryTypeName",
+                        "src": "692:5:1"
+                      }
+                    ],
+                    "id": 140,
+                    "name": "VariableDeclaration",
+                    "src": "692:8:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_dir",
+                      "scope": 161,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 141,
+                        "name": "ElementaryTypeName",
+                        "src": "702:4:1"
+                      }
+                    ],
+                    "id": 142,
+                    "name": "VariableDeclaration",
+                    "src": "702:9:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_e",
+                      "scope": 161,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 143,
+                        "name": "ElementaryTypeName",
+                        "src": "713:6:1"
+                      }
+                    ],
+                    "id": 144,
+                    "name": "VariableDeclaration",
+                    "src": "713:9:1"
+                  }
+                ],
+                "id": 145,
+                "name": "ParameterList",
+                "src": "691:32:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 146,
+                "name": "ParameterList",
+                "src": "731:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint8",
+                                  "typeString": "uint8"
+                                },
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "readInput",
+                              "referencedDeclaration": 397,
+                              "type": "function (struct lib9090.input9090Map storage pointer,uint256,uint8,bool,uint32)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 73,
+                                  "type": "struct lib9090.input9090Map storage ref",
+                                  "value": "map9"
+                                },
+                                "id": 147,
+                                "name": "Identifier",
+                                "src": "737:4:1"
+                              }
+                            ],
+                            "id": 149,
+                            "name": "MemberAccess",
+                            "src": "737:14:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 412,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 150,
+                            "name": "Identifier",
+                            "src": "752:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 140,
+                              "type": "uint8",
+                              "value": "_p"
+                            },
+                            "id": 151,
+                            "name": "Identifier",
+                            "src": "757:2:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 142,
+                              "type": "bool",
+                              "value": "_dir"
+                            },
+                            "id": 152,
+                            "name": "Identifier",
+                            "src": "761:4:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 144,
+                              "type": "uint32",
+                              "value": "_e"
+                            },
+                            "id": 153,
+                            "name": "Identifier",
+                            "src": "767:2:1"
+                          }
+                        ],
+                        "id": 154,
+                        "name": "FunctionCall",
+                        "src": "737:33:1"
+                      }
+                    ],
+                    "id": 155,
+                    "name": "ExpressionStatement",
+                    "src": "737:33:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 79,
+                              "type": "uint256",
+                              "value": "tempNow_9"
+                            },
+                            "id": 156,
+                            "name": "Identifier",
+                            "src": "776:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 412,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 157,
+                            "name": "Identifier",
+                            "src": "788:3:1"
+                          }
+                        ],
+                        "id": 158,
+                        "name": "Assignment",
+                        "src": "776:15:1"
+                      }
+                    ],
+                    "id": 159,
+                    "name": "ExpressionStatement",
+                    "src": "776:15:1"
+                  }
+                ],
+                "id": 160,
+                "name": "Block",
+                "src": "731:65:1"
+              }
+            ],
+            "id": 161,
+            "name": "FunctionDefinition",
+            "src": "674:122:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "get7070",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 162,
+                "name": "ParameterList",
+                "src": "816:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 173,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 163,
+                        "name": "ElementaryTypeName",
+                        "src": "840:5:1"
+                      }
+                    ],
+                    "id": 164,
+                    "name": "VariableDeclaration",
+                    "src": "840:5:1"
+                  }
+                ],
+                "id": 165,
+                "name": "ParameterList",
+                "src": "839:7:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 165
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "maxCurrent",
+                          "referencedDeclaration": 254,
+                          "type": "uint8"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct lib7070.input7070 storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "inputMap",
+                                  "referencedDeclaration": 259,
+                                  "type": "mapping(uint256 => struct lib7070.input7070 storage ref)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 69,
+                                      "type": "struct lib7070.input7070Map storage ref",
+                                      "value": "map7"
+                                    },
+                                    "id": 166,
+                                    "name": "Identifier",
+                                    "src": "860:4:1"
+                                  }
+                                ],
+                                "id": 167,
+                                "name": "MemberAccess",
+                                "src": "860:13:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 75,
+                                  "type": "uint256",
+                                  "value": "tempNow_7"
+                                },
+                                "id": 168,
+                                "name": "Identifier",
+                                "src": "874:9:1"
+                              }
+                            ],
+                            "id": 169,
+                            "name": "IndexAccess",
+                            "src": "860:24:1"
+                          }
+                        ],
+                        "id": 170,
+                        "name": "MemberAccess",
+                        "src": "860:35:1"
+                      }
+                    ],
+                    "id": 171,
+                    "name": "Return",
+                    "src": "853:42:1"
+                  }
+                ],
+                "id": 172,
+                "name": "Block",
+                "src": "847:53:1"
+              }
+            ],
+            "id": 173,
+            "name": "FunctionDefinition",
+            "src": "800:100:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "get8080",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_id",
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 174,
+                        "name": "ElementaryTypeName",
+                        "src": "921:4:1"
+                      }
+                    ],
+                    "id": 175,
+                    "name": "VariableDeclaration",
+                    "src": "921:8:1"
+                  }
+                ],
+                "id": 176,
+                "name": "ParameterList",
+                "src": "920:10:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_p",
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int8",
+                          "type": "int8"
+                        },
+                        "id": 177,
+                        "name": "ElementaryTypeName",
+                        "src": "952:4:1"
+                      }
+                    ],
+                    "id": 178,
+                    "name": "VariableDeclaration",
+                    "src": "952:7:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_ti",
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 179,
+                        "name": "ElementaryTypeName",
+                        "src": "961:6:1"
+                      }
+                    ],
+                    "id": 180,
+                    "name": "VariableDeclaration",
+                    "src": "961:10:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_te",
+                      "scope": 215,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 181,
+                        "name": "ElementaryTypeName",
+                        "src": "973:6:1"
+                      }
+                    ],
+                    "id": 182,
+                    "name": "VariableDeclaration",
+                    "src": "973:10:1"
+                  }
+                ],
+                "id": 183,
+                "name": "ParameterList",
+                "src": "951:33:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "int8"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 178,
+                              "type": "int8",
+                              "value": "_p"
+                            },
+                            "id": 184,
+                            "name": "Identifier",
+                            "src": "991:2:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "power",
+                              "referencedDeclaration": 285,
+                              "type": "int8"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct lib8080.input8080 storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "mapping(uint256 => struct lib8080.input8080 storage ref)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "inputMap",
+                                          "referencedDeclaration": 300,
+                                          "type": "mapping(uint256 => mapping(uint256 => struct lib8080.input8080 storage ref))"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 71,
+                                              "type": "struct lib8080.input8080Map storage ref",
+                                              "value": "map8"
+                                            },
+                                            "id": 185,
+                                            "name": "Identifier",
+                                            "src": "996:4:1"
+                                          }
+                                        ],
+                                        "id": 186,
+                                        "name": "MemberAccess",
+                                        "src": "996:13:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 175,
+                                          "type": "uint256",
+                                          "value": "_id"
+                                        },
+                                        "id": 187,
+                                        "name": "Identifier",
+                                        "src": "1010:3:1"
+                                      }
+                                    ],
+                                    "id": 188,
+                                    "name": "IndexAccess",
+                                    "src": "996:18:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 77,
+                                      "type": "uint256",
+                                      "value": "tempNow_8"
+                                    },
+                                    "id": 189,
+                                    "name": "Identifier",
+                                    "src": "1015:9:1"
+                                  }
+                                ],
+                                "id": 190,
+                                "name": "IndexAccess",
+                                "src": "996:29:1"
+                              }
+                            ],
+                            "id": 191,
+                            "name": "MemberAccess",
+                            "src": "996:35:1"
+                          }
+                        ],
+                        "id": 192,
+                        "name": "Assignment",
+                        "src": "991:40:1"
+                      }
+                    ],
+                    "id": 193,
+                    "name": "ExpressionStatement",
+                    "src": "991:40:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 180,
+                              "type": "uint32",
+                              "value": "_ti"
+                            },
+                            "id": 194,
+                            "name": "Identifier",
+                            "src": "1037:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "totalImport",
+                              "referencedDeclaration": 287,
+                              "type": "uint32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct lib8080.input8080 storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "mapping(uint256 => struct lib8080.input8080 storage ref)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "inputMap",
+                                          "referencedDeclaration": 300,
+                                          "type": "mapping(uint256 => mapping(uint256 => struct lib8080.input8080 storage ref))"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 71,
+                                              "type": "struct lib8080.input8080Map storage ref",
+                                              "value": "map8"
+                                            },
+                                            "id": 195,
+                                            "name": "Identifier",
+                                            "src": "1043:4:1"
+                                          }
+                                        ],
+                                        "id": 196,
+                                        "name": "MemberAccess",
+                                        "src": "1043:13:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 175,
+                                          "type": "uint256",
+                                          "value": "_id"
+                                        },
+                                        "id": 197,
+                                        "name": "Identifier",
+                                        "src": "1057:3:1"
+                                      }
+                                    ],
+                                    "id": 198,
+                                    "name": "IndexAccess",
+                                    "src": "1043:18:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 77,
+                                      "type": "uint256",
+                                      "value": "tempNow_8"
+                                    },
+                                    "id": 199,
+                                    "name": "Identifier",
+                                    "src": "1062:9:1"
+                                  }
+                                ],
+                                "id": 200,
+                                "name": "IndexAccess",
+                                "src": "1043:29:1"
+                              }
+                            ],
+                            "id": 201,
+                            "name": "MemberAccess",
+                            "src": "1043:41:1"
+                          }
+                        ],
+                        "id": 202,
+                        "name": "Assignment",
+                        "src": "1037:47:1"
+                      }
+                    ],
+                    "id": 203,
+                    "name": "ExpressionStatement",
+                    "src": "1037:47:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 182,
+                              "type": "uint32",
+                              "value": "_te"
+                            },
+                            "id": 204,
+                            "name": "Identifier",
+                            "src": "1090:3:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "totalExport",
+                              "referencedDeclaration": 289,
+                              "type": "uint32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct lib8080.input8080 storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "mapping(uint256 => struct lib8080.input8080 storage ref)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "inputMap",
+                                          "referencedDeclaration": 300,
+                                          "type": "mapping(uint256 => mapping(uint256 => struct lib8080.input8080 storage ref))"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 71,
+                                              "type": "struct lib8080.input8080Map storage ref",
+                                              "value": "map8"
+                                            },
+                                            "id": 205,
+                                            "name": "Identifier",
+                                            "src": "1096:4:1"
+                                          }
+                                        ],
+                                        "id": 206,
+                                        "name": "MemberAccess",
+                                        "src": "1096:13:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 175,
+                                          "type": "uint256",
+                                          "value": "_id"
+                                        },
+                                        "id": 207,
+                                        "name": "Identifier",
+                                        "src": "1110:3:1"
+                                      }
+                                    ],
+                                    "id": 208,
+                                    "name": "IndexAccess",
+                                    "src": "1096:18:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 77,
+                                      "type": "uint256",
+                                      "value": "tempNow_8"
+                                    },
+                                    "id": 209,
+                                    "name": "Identifier",
+                                    "src": "1115:9:1"
+                                  }
+                                ],
+                                "id": 210,
+                                "name": "IndexAccess",
+                                "src": "1096:29:1"
+                              }
+                            ],
+                            "id": 211,
+                            "name": "MemberAccess",
+                            "src": "1096:41:1"
+                          }
+                        ],
+                        "id": 212,
+                        "name": "Assignment",
+                        "src": "1090:47:1"
+                      }
+                    ],
+                    "id": 213,
+                    "name": "ExpressionStatement",
+                    "src": "1090:47:1"
+                  }
+                ],
+                "id": 214,
+                "name": "Block",
+                "src": "985:157:1"
+              }
+            ],
+            "id": 215,
+            "name": "FunctionDefinition",
+            "src": "904:238:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "get9090",
+              "payable": false,
+              "scope": 250,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 216,
+                "name": "ParameterList",
+                "src": "1162:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_p",
+                      "scope": 249,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 217,
+                        "name": "ElementaryTypeName",
+                        "src": "1186:5:1"
+                      }
+                    ],
+                    "id": 218,
+                    "name": "VariableDeclaration",
+                    "src": "1186:8:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_dir",
+                      "scope": 249,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 219,
+                        "name": "ElementaryTypeName",
+                        "src": "1196:4:1"
+                      }
+                    ],
+                    "id": 220,
+                    "name": "VariableDeclaration",
+                    "src": "1196:9:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_e",
+                      "scope": 249,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 221,
+                        "name": "ElementaryTypeName",
+                        "src": "1207:6:1"
+                      }
+                    ],
+                    "id": 222,
+                    "name": "VariableDeclaration",
+                    "src": "1207:9:1"
+                  }
+                ],
+                "id": 223,
+                "name": "ParameterList",
+                "src": "1185:32:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint8"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 218,
+                              "type": "uint8",
+                              "value": "_p"
+                            },
+                            "id": 224,
+                            "name": "Identifier",
+                            "src": "1224:2:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "power",
+                              "referencedDeclaration": 361,
+                              "type": "uint8"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct lib9090.input9090 storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "inputMap",
+                                      "referencedDeclaration": 370,
+                                      "type": "mapping(uint256 => struct lib9090.input9090 storage ref)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 73,
+                                          "type": "struct lib9090.input9090Map storage ref",
+                                          "value": "map9"
+                                        },
+                                        "id": 225,
+                                        "name": "Identifier",
+                                        "src": "1229:4:1"
+                                      }
+                                    ],
+                                    "id": 226,
+                                    "name": "MemberAccess",
+                                    "src": "1229:13:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 79,
+                                      "type": "uint256",
+                                      "value": "tempNow_9"
+                                    },
+                                    "id": 227,
+                                    "name": "Identifier",
+                                    "src": "1243:9:1"
+                                  }
+                                ],
+                                "id": 228,
+                                "name": "IndexAccess",
+                                "src": "1229:24:1"
+                              }
+                            ],
+                            "id": 229,
+                            "name": "MemberAccess",
+                            "src": "1229:30:1"
+                          }
+                        ],
+                        "id": 230,
+                        "name": "Assignment",
+                        "src": "1224:35:1"
+                      }
+                    ],
+                    "id": 231,
+                    "name": "ExpressionStatement",
+                    "src": "1224:35:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 220,
+                              "type": "bool",
+                              "value": "_dir"
+                            },
+                            "id": 232,
+                            "name": "Identifier",
+                            "src": "1265:4:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "direction",
+                              "referencedDeclaration": 363,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct lib9090.input9090 storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "inputMap",
+                                      "referencedDeclaration": 370,
+                                      "type": "mapping(uint256 => struct lib9090.input9090 storage ref)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 73,
+                                          "type": "struct lib9090.input9090Map storage ref",
+                                          "value": "map9"
+                                        },
+                                        "id": 233,
+                                        "name": "Identifier",
+                                        "src": "1272:4:1"
+                                      }
+                                    ],
+                                    "id": 234,
+                                    "name": "MemberAccess",
+                                    "src": "1272:13:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 79,
+                                      "type": "uint256",
+                                      "value": "tempNow_9"
+                                    },
+                                    "id": 235,
+                                    "name": "Identifier",
+                                    "src": "1286:9:1"
+                                  }
+                                ],
+                                "id": 236,
+                                "name": "IndexAccess",
+                                "src": "1272:24:1"
+                              }
+                            ],
+                            "id": 237,
+                            "name": "MemberAccess",
+                            "src": "1272:34:1"
+                          }
+                        ],
+                        "id": 238,
+                        "name": "Assignment",
+                        "src": "1265:41:1"
+                      }
+                    ],
+                    "id": 239,
+                    "name": "ExpressionStatement",
+                    "src": "1265:41:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 222,
+                              "type": "uint32",
+                              "value": "_e"
+                            },
+                            "id": 240,
+                            "name": "Identifier",
+                            "src": "1312:2:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "energy",
+                              "referencedDeclaration": 365,
+                              "type": "uint32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct lib9090.input9090 storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "inputMap",
+                                      "referencedDeclaration": 370,
+                                      "type": "mapping(uint256 => struct lib9090.input9090 storage ref)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 73,
+                                          "type": "struct lib9090.input9090Map storage ref",
+                                          "value": "map9"
+                                        },
+                                        "id": 241,
+                                        "name": "Identifier",
+                                        "src": "1317:4:1"
+                                      }
+                                    ],
+                                    "id": 242,
+                                    "name": "MemberAccess",
+                                    "src": "1317:13:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 79,
+                                      "type": "uint256",
+                                      "value": "tempNow_9"
+                                    },
+                                    "id": 243,
+                                    "name": "Identifier",
+                                    "src": "1331:9:1"
+                                  }
+                                ],
+                                "id": 244,
+                                "name": "IndexAccess",
+                                "src": "1317:24:1"
+                              }
+                            ],
+                            "id": 245,
+                            "name": "MemberAccess",
+                            "src": "1317:31:1"
+                          }
+                        ],
+                        "id": 246,
+                        "name": "Assignment",
+                        "src": "1312:36:1"
+                      }
+                    ],
+                    "id": 247,
+                    "name": "ExpressionStatement",
+                    "src": "1312:36:1"
+                  }
+                ],
+                "id": 248,
+                "name": "Block",
+                "src": "1218:135:1"
+              }
+            ],
+            "id": 249,
+            "name": "FunctionDefinition",
+            "src": "1146:207:1"
+          }
+        ],
+        "id": 250,
+        "name": "ContractDefinition",
+        "src": "99:1256:1"
+      }
+    ],
+    "id": 251,
+    "name": "SourceUnit",
+    "src": "0:1356:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "1519496910477": {
+      "events": {},
+      "links": {
+        "lib7070": "0xc2db4e8400765c9ccbf5b81d84b0a496e794c9a7",
+        "lib8080": "0xcab491ac23e2ce333324d96534d158fd5481eb6d",
+        "lib9090": "0xa8c297f69fd3b17c898d9457ce924ce0297e2e27"
+      },
+      "address": "0xbde10a2ee03a94709059a0f14386e9a8abe991d1"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-24T19:12:21.900Z"
+}

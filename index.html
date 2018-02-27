@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Selber_Ethereum_PoC | Home</title>
+      <meta charset="utf-8"/>
+        <script src="jquery-3.2.1.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <a class="navbar-brand" href="index.html" style="margin-left:1%">Selber_Ethereum_PoC</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                      <ul class="navbar-nav mr-auto">
+                        <!-- <li class="nav-item active"> -->
+                        <li class="nav-item">
+                          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                          <a class="nav-link" href="survey.html">Survey</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" placeholder="Search" type="text">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            <div style="margin:2%">
+                <h1>Welcome to Selber_Ethereum_PoC</h1>
+                <div class="col-md-8" id="content">Do I have web3?!</div>
+                <!-- <form id="my-form">
+                    <input type="text" name="greeting" id="greeting" value="new msg" />
+                    <button type="submit">change message!</button>
+                </form> -->
+                <p>
+                  <div class="col-md-8">
+                    <form id="contract_creation"> To create a contract on the chain: 
+                        <input class="form-control form-control-md-2" placeholder="enter companyID (uint format)" id="init_input_1" type="number" width="1">
+                        <textarea id="init_input_2" class="form-control" placeholder="enter list of permissioned public keys" rows="4"></textarea>
+                        <input class="form-control form-control-md-2" placeholder="enter hash (IPFS format)" id="init_input_3" type="text" width="1">
+                        <button type="submit" class="btn btn-primary">Create Smart Contract</button>
+                    </form>
+                  </div>
+                </p>
+                <div style="margin-top:40px;">
+                  <div class="col-md-8">Retrieve data from port 7070
+                    <form id = "retrieve_7070">
+                        <button style="margin-top:3px;" type="button" class="btn btn-secondary"id="get_7070">Get data from 7070</button>
+                        <input style="width:40%" class="form-control form-control-md-4" placeholder="Display the data" id="display_7070" type="text" width="1">
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-8" id="event_logging">Event logs:</div>
+             </div>    
+        <script src="custom.js"></script>
+    </body>
+</html>

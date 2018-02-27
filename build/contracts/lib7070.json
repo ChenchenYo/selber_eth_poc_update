@@ -1,0 +1,458 @@
+{
+  "contractName": "lib7070",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_map",
+          "type": "lib7070.input7070Map storage"
+        },
+        {
+          "name": "_timestamp",
+          "type": "uint256"
+        },
+        {
+          "name": "_mc",
+          "type": "uint8"
+        }
+      ],
+      "name": "readInput",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b60b88061001c6000396000f300606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c546ade381146043575b600080fd5b605560043560243560ff604435166057565b005b6020604051908101604090815260ff8316825260008481526020869052208151815460ff191660ff91909116179055505050505600a165627a7a723058204f62fb3de358ac10aa8b36a691aa15a1dd411641200c020ce5e4c7c72a570df40029",
+  "deployedBytecode": "0x606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c546ade381146043575b600080fd5b605560043560243560ff604435166057565b005b6020604051908101604090815260ff8316825260008481526020869052208151815460ff191660ff91909116179055505050505600a165627a7a723058204f62fb3de358ac10aa8b36a691aa15a1dd411641200c020ce5e4c7c72a570df40029",
+  "sourceMap": "26:315:2:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:315:2:-;;;;;;;;;;;;;;;;;;;;;;;203:135;;;;;;;;;;;;;;;319:14;;;;;;;;;;;;;;;291:13;:25;;;;;;;;319:14;291:42;;;-1:-1:-1;;291:42:2;;;;;;;;;-1:-1:-1;;;;203:135:2:o",
+  "source": "pragma solidity ^0.4.16;\n\nlibrary lib7070 {\n\n  struct input7070 {\n    uint8 maxCurrent;      // input from \"MaxChargeCurrentA\"\n  }\n\n  struct input7070Map {\n    mapping(uint=>input7070) inputMap;\n  } \n\n  function readInput (input7070Map storage _map, uint _timestamp, uint8 _mc) public {\n    _map.inputMap[_timestamp] = input7070(_mc);\n  }\n\n}\n",
+  "sourcePath": "C:\\Users\\qianc\\Documents\\Selber\\selber_eth_poc\\contracts\\lib7070.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Users/qianc/Documents/Selber/selber_eth_poc/contracts/lib7070.sol",
+      "exportedSymbols": {
+        "lib7070": [
+          281
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".16"
+          ]
+        },
+        "id": 252,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            281
+          ],
+          "name": "lib7070",
+          "scope": 282
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "lib7070.input7070",
+              "name": "input7070",
+              "scope": 281,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "maxCurrent",
+                  "scope": 255,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint8",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint8",
+                      "type": "uint8"
+                    },
+                    "id": 253,
+                    "name": "ElementaryTypeName",
+                    "src": "70:5:2"
+                  }
+                ],
+                "id": 254,
+                "name": "VariableDeclaration",
+                "src": "70:16:2"
+              }
+            ],
+            "id": 255,
+            "name": "StructDefinition",
+            "src": "47:83:2"
+          },
+          {
+            "attributes": {
+              "canonicalName": "lib7070.input7070Map",
+              "name": "input7070Map",
+              "scope": 281,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "inputMap",
+                  "scope": 260,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(uint256 => struct lib7070.input7070 storage ref)",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(uint256 => struct lib7070.input7070 storage ref)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 256,
+                        "name": "ElementaryTypeName",
+                        "src": "168:4:2"
+                      },
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "input7070",
+                          "referencedDeclaration": 255,
+                          "type": "struct lib7070.input7070 storage pointer"
+                        },
+                        "id": 257,
+                        "name": "UserDefinedTypeName",
+                        "src": "174:9:2"
+                      }
+                    ],
+                    "id": 258,
+                    "name": "Mapping",
+                    "src": "160:24:2"
+                  }
+                ],
+                "id": 259,
+                "name": "VariableDeclaration",
+                "src": "160:33:2"
+              }
+            ],
+            "id": 260,
+            "name": "StructDefinition",
+            "src": "134:64:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "readInput",
+              "payable": false,
+              "scope": 281,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_map",
+                      "scope": 280,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct lib7070.input7070Map storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "input7070Map",
+                          "referencedDeclaration": 260,
+                          "type": "struct lib7070.input7070Map storage pointer"
+                        },
+                        "id": 261,
+                        "name": "UserDefinedTypeName",
+                        "src": "223:12:2"
+                      }
+                    ],
+                    "id": 262,
+                    "name": "VariableDeclaration",
+                    "src": "223:25:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_timestamp",
+                      "scope": 280,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 263,
+                        "name": "ElementaryTypeName",
+                        "src": "250:4:2"
+                      }
+                    ],
+                    "id": 264,
+                    "name": "VariableDeclaration",
+                    "src": "250:15:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_mc",
+                      "scope": 280,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 265,
+                        "name": "ElementaryTypeName",
+                        "src": "267:5:2"
+                      }
+                    ],
+                    "id": 266,
+                    "name": "VariableDeclaration",
+                    "src": "267:9:2"
+                  }
+                ],
+                "id": 267,
+                "name": "ParameterList",
+                "src": "222:55:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 268,
+                "name": "ParameterList",
+                "src": "285:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct lib7070.input7070 storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct lib7070.input7070 storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "inputMap",
+                                  "referencedDeclaration": 259,
+                                  "type": "mapping(uint256 => struct lib7070.input7070 storage ref)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 262,
+                                      "type": "struct lib7070.input7070Map storage pointer",
+                                      "value": "_map"
+                                    },
+                                    "id": 269,
+                                    "name": "Identifier",
+                                    "src": "291:4:2"
+                                  }
+                                ],
+                                "id": 272,
+                                "name": "MemberAccess",
+                                "src": "291:13:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 264,
+                                  "type": "uint256",
+                                  "value": "_timestamp"
+                                },
+                                "id": 271,
+                                "name": "Identifier",
+                                "src": "305:10:2"
+                              }
+                            ],
+                            "id": 273,
+                            "name": "IndexAccess",
+                            "src": "291:25:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct lib7070.input7070 memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint8",
+                                      "typeString": "uint8"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 255,
+                                  "type": "type(struct lib7070.input7070 storage pointer)",
+                                  "value": "input7070"
+                                },
+                                "id": 274,
+                                "name": "Identifier",
+                                "src": "319:9:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 266,
+                                  "type": "uint8",
+                                  "value": "_mc"
+                                },
+                                "id": 275,
+                                "name": "Identifier",
+                                "src": "329:3:2"
+                              }
+                            ],
+                            "id": 276,
+                            "name": "FunctionCall",
+                            "src": "319:14:2"
+                          }
+                        ],
+                        "id": 277,
+                        "name": "Assignment",
+                        "src": "291:42:2"
+                      }
+                    ],
+                    "id": 278,
+                    "name": "ExpressionStatement",
+                    "src": "291:42:2"
+                  }
+                ],
+                "id": 279,
+                "name": "Block",
+                "src": "285:53:2"
+              }
+            ],
+            "id": 280,
+            "name": "FunctionDefinition",
+            "src": "203:135:2"
+          }
+        ],
+        "id": 281,
+        "name": "ContractDefinition",
+        "src": "26:315:2"
+      }
+    ],
+    "id": 282,
+    "name": "SourceUnit",
+    "src": "0:342:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "1519496910477": {
+      "events": {},
+      "links": {},
+      "address": "0xc2db4e8400765c9ccbf5b81d84b0a496e794c9a7"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-24T19:12:21.876Z"
+}

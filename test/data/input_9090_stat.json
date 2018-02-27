@@ -1,0 +1,18 @@
+{
+   "1-0:0.0.9*255" : "09014841470000035208",
+   "1-0:15.7.0*255" : 0.0,
+   "1-0:2.8.0*255" : 726763.40,
+   "1-0:2.8.1*255" : 725763.40,
+   "1-0:2.8.2*255" : 1000.0,
+   "act_sensor_time" : 87338773.0,
+   "server_id" : "09014841470000035208",
+   "status" : {
+      "backstop" : false,
+      "error" : false,
+      "flowdirection" : "+A",
+      "manipulation" : false,
+      "no_load_operation" : true,
+      "telegram" : "asynchronous"
+   },
+   "transaction_id" : 183506677
+}

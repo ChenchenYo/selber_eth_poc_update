@@ -1,0 +1,1090 @@
+{
+  "contractName": "lib8080",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_map",
+          "type": "lib8080.input8080Map storage"
+        },
+        {
+          "name": "_timestamp",
+          "type": "uint256"
+        },
+        {
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "name": "_p",
+          "type": "int8"
+        },
+        {
+          "name": "_ti",
+          "type": "uint32"
+        },
+        {
+          "name": "_te",
+          "type": "uint32"
+        }
+      ],
+      "name": "readInput",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_map",
+          "type": "lib8080.input8080Map storage"
+        },
+        {
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "setAllowedID",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101958061001e6000396000f30060606040526004361061004b5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663a430b2898114610050578063b71ae2f814610078575b600080fd5b61007660043560243560443560643560000b63ffffffff60843581169060a43516610086565b005b61007660043560243561014d565b60008481526020879052604090205460ff1615156001146100a657600080fd5b60606040519081016040908152600085810b835263ffffffff8086166020808601919091529085168385015287825260018a0181528282208983529052208151815460009190910b60ff1660ff199091161781556020820151815463ffffffff919091166101000264ffffffff00199091161781556040820151815463ffffffff91909116650100000000000268ffffffff00000000001990911617905550505050505050565b600090815260209190915260409020805460ff191660011790555600a165627a7a723058201126b3b5f08e41af5309c0eb04a11db0381787b203e531e410a6e7dc9a8364920029",
+  "deployedBytecode": "0x60606040526004361061004b5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663a430b2898114610050578063b71ae2f814610078575b600080fd5b61007660043560243560443560643560000b63ffffffff60843581169060a43516610086565b005b61007660043560243561014d565b60008481526020879052604090205460ff1615156001146100a657600080fd5b60606040519081016040908152600085810b835263ffffffff8086166020808601919091529085168385015287825260018a0181528282208983529052208151815460009190910b60ff1660ff199091161781556020820151815463ffffffff919091166101000264ffffffff00199091161781556040820151815463ffffffff91909116650100000000000268ffffffff00000000001990911617905550505050505050565b600090815260209190915260409020805460ff191660011790555600a165627a7a723058201126b3b5f08e41af5309c0eb04a11db0381787b203e531e410a6e7dc9a8364920029",
+  "sourceMap": "26:685:3:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:685:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;377:223;;;;;;;;;;;;;;;;;;;;;;;;;604:104;;;;;;;;377:223;505:14;:19;;;;;;;;;;;;;:27;;:19;:27;497:36;;;;;;572:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;539:18;;;:13;;;:18;;;;;:30;;;;;;572:23;539:56;;;;;;;;;;-1:-1:-1;;539:56:3;;;;;;;;;;;;;;;;;;;-1:-1:-1;;539:56:3;;;;;;;;;;;;;;;;;;;-1:-1:-1;;539:56:3;;;;;;-1:-1:-1;;;;;;;377:223:3:o;604:104::-;677:14;:19;;;;;;;;;;;:26;;-1:-1:-1;;677:26:3;699:4;677:26;;;604:104::o",
+  "source": "pragma solidity ^0.4.16;\n\nlibrary lib8080 {\n\n  struct input8080 {\n    int8 power;      // input from \"Power\", x10 (w) \n    uint32 totalImport;    // input from \"TotalImport\": x100 (wh)\n    uint32 totalExport;    // input from \"TotalExport\": x100 (wh)\n  }\n\n  struct input8080Map {\n    mapping(uint=>bool) allowedID;\n    mapping(uint=>mapping(uint=>input8080)) inputMap;\n  } \n\n  function readInput (input8080Map storage _map, uint _timestamp, uint _id, int8 _p, uint32 _ti, uint32 _te) public {\n    require(_map.allowedID[_id] == true);\n    _map.inputMap[_id][_timestamp] = input8080(_p, _ti, _te);\n  }\n\n  function setAllowedID (input8080Map storage _map, uint _id) public {\n    _map.allowedID[_id] = true;\n  }\n\n}\n",
+  "sourcePath": "C:\\Users\\qianc\\Documents\\Selber\\selber_eth_poc\\contracts\\lib8080.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Users/qianc/Documents/Selber/selber_eth_poc/contracts/lib8080.sol",
+      "exportedSymbols": {
+        "lib8080": [
+          357
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".16"
+          ]
+        },
+        "id": 283,
+        "name": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            357
+          ],
+          "name": "lib8080",
+          "scope": 358
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "lib8080.input8080",
+              "name": "input8080",
+              "scope": 357,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "power",
+                  "scope": 290,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "int8",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "int8",
+                      "type": "int8"
+                    },
+                    "id": 284,
+                    "name": "ElementaryTypeName",
+                    "src": "70:4:3"
+                  }
+                ],
+                "id": 285,
+                "name": "VariableDeclaration",
+                "src": "70:10:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "totalImport",
+                  "scope": 290,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint32",
+                      "type": "uint32"
+                    },
+                    "id": 286,
+                    "name": "ElementaryTypeName",
+                    "src": "123:6:3"
+                  }
+                ],
+                "id": 287,
+                "name": "VariableDeclaration",
+                "src": "123:18:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "totalExport",
+                  "scope": 290,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint32",
+                      "type": "uint32"
+                    },
+                    "id": 288,
+                    "name": "ElementaryTypeName",
+                    "src": "189:6:3"
+                  }
+                ],
+                "id": 289,
+                "name": "VariableDeclaration",
+                "src": "189:18:3"
+              }
+            ],
+            "id": 290,
+            "name": "StructDefinition",
+            "src": "47:207:3"
+          },
+          {
+            "attributes": {
+              "canonicalName": "lib8080.input8080Map",
+              "name": "input8080Map",
+              "scope": 357,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "allowedID",
+                  "scope": 301,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(uint256 => bool)",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(uint256 => bool)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 291,
+                        "name": "ElementaryTypeName",
+                        "src": "292:4:3"
+                      },
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 292,
+                        "name": "ElementaryTypeName",
+                        "src": "298:4:3"
+                      }
+                    ],
+                    "id": 293,
+                    "name": "Mapping",
+                    "src": "284:19:3"
+                  }
+                ],
+                "id": 294,
+                "name": "VariableDeclaration",
+                "src": "284:29:3"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "inputMap",
+                  "scope": 301,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(uint256 => mapping(uint256 => struct lib8080.input8080 storage ref))",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(uint256 => mapping(uint256 => struct lib8080.input8080 storage ref))"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 295,
+                        "name": "ElementaryTypeName",
+                        "src": "327:4:3"
+                      },
+                      {
+                        "attributes": {
+                          "type": "mapping(uint256 => struct lib8080.input8080 storage ref)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint",
+                              "type": "uint256"
+                            },
+                            "id": 296,
+                            "name": "ElementaryTypeName",
+                            "src": "341:4:3"
+                          },
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "input8080",
+                              "referencedDeclaration": 290,
+                              "type": "struct lib8080.input8080 storage pointer"
+                            },
+                            "id": 297,
+                            "name": "UserDefinedTypeName",
+                            "src": "347:9:3"
+                          }
+                        ],
+                        "id": 298,
+                        "name": "Mapping",
+                        "src": "333:24:3"
+                      }
+                    ],
+                    "id": 299,
+                    "name": "Mapping",
+                    "src": "319:39:3"
+                  }
+                ],
+                "id": 300,
+                "name": "VariableDeclaration",
+                "src": "319:48:3"
+              }
+            ],
+            "id": 301,
+            "name": "StructDefinition",
+            "src": "258:114:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "readInput",
+              "payable": false,
+              "scope": 357,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_map",
+                      "scope": 340,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct lib8080.input8080Map storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "input8080Map",
+                          "referencedDeclaration": 301,
+                          "type": "struct lib8080.input8080Map storage pointer"
+                        },
+                        "id": 302,
+                        "name": "UserDefinedTypeName",
+                        "src": "397:12:3"
+                      }
+                    ],
+                    "id": 303,
+                    "name": "VariableDeclaration",
+                    "src": "397:25:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_timestamp",
+                      "scope": 340,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 304,
+                        "name": "ElementaryTypeName",
+                        "src": "424:4:3"
+                      }
+                    ],
+                    "id": 305,
+                    "name": "VariableDeclaration",
+                    "src": "424:15:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_id",
+                      "scope": 340,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 306,
+                        "name": "ElementaryTypeName",
+                        "src": "441:4:3"
+                      }
+                    ],
+                    "id": 307,
+                    "name": "VariableDeclaration",
+                    "src": "441:8:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_p",
+                      "scope": 340,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int8",
+                          "type": "int8"
+                        },
+                        "id": 308,
+                        "name": "ElementaryTypeName",
+                        "src": "451:4:3"
+                      }
+                    ],
+                    "id": 309,
+                    "name": "VariableDeclaration",
+                    "src": "451:7:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_ti",
+                      "scope": 340,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 310,
+                        "name": "ElementaryTypeName",
+                        "src": "460:6:3"
+                      }
+                    ],
+                    "id": 311,
+                    "name": "VariableDeclaration",
+                    "src": "460:10:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_te",
+                      "scope": 340,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint32",
+                          "type": "uint32"
+                        },
+                        "id": 312,
+                        "name": "ElementaryTypeName",
+                        "src": "472:6:3"
+                      }
+                    ],
+                    "id": 313,
+                    "name": "VariableDeclaration",
+                    "src": "472:10:3"
+                  }
+                ],
+                "id": 314,
+                "name": "ParameterList",
+                "src": "396:87:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 315,
+                "name": "ParameterList",
+                "src": "491:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 413,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 316,
+                            "name": "Identifier",
+                            "src": "497:7:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "allowedID",
+                                      "referencedDeclaration": 294,
+                                      "type": "mapping(uint256 => bool)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 303,
+                                          "type": "struct lib8080.input8080Map storage pointer",
+                                          "value": "_map"
+                                        },
+                                        "id": 317,
+                                        "name": "Identifier",
+                                        "src": "505:4:3"
+                                      }
+                                    ],
+                                    "id": 318,
+                                    "name": "MemberAccess",
+                                    "src": "505:14:3"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 307,
+                                      "type": "uint256",
+                                      "value": "_id"
+                                    },
+                                    "id": 319,
+                                    "name": "Identifier",
+                                    "src": "520:3:3"
+                                  }
+                                ],
+                                "id": 320,
+                                "name": "IndexAccess",
+                                "src": "505:19:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 321,
+                                "name": "Literal",
+                                "src": "528:4:3"
+                              }
+                            ],
+                            "id": 322,
+                            "name": "BinaryOperation",
+                            "src": "505:27:3"
+                          }
+                        ],
+                        "id": 323,
+                        "name": "FunctionCall",
+                        "src": "497:36:3"
+                      }
+                    ],
+                    "id": 324,
+                    "name": "ExpressionStatement",
+                    "src": "497:36:3"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct lib8080.input8080 storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct lib8080.input8080 storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "mapping(uint256 => struct lib8080.input8080 storage ref)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "inputMap",
+                                      "referencedDeclaration": 300,
+                                      "type": "mapping(uint256 => mapping(uint256 => struct lib8080.input8080 storage ref))"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 303,
+                                          "type": "struct lib8080.input8080Map storage pointer",
+                                          "value": "_map"
+                                        },
+                                        "id": 325,
+                                        "name": "Identifier",
+                                        "src": "539:4:3"
+                                      }
+                                    ],
+                                    "id": 329,
+                                    "name": "MemberAccess",
+                                    "src": "539:13:3"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 307,
+                                      "type": "uint256",
+                                      "value": "_id"
+                                    },
+                                    "id": 327,
+                                    "name": "Identifier",
+                                    "src": "553:3:3"
+                                  }
+                                ],
+                                "id": 330,
+                                "name": "IndexAccess",
+                                "src": "539:18:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 305,
+                                  "type": "uint256",
+                                  "value": "_timestamp"
+                                },
+                                "id": 328,
+                                "name": "Identifier",
+                                "src": "558:10:3"
+                              }
+                            ],
+                            "id": 331,
+                            "name": "IndexAccess",
+                            "src": "539:30:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct lib8080.input8080 memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_int8",
+                                      "typeString": "int8"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint32",
+                                      "typeString": "uint32"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint32",
+                                      "typeString": "uint32"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 290,
+                                  "type": "type(struct lib8080.input8080 storage pointer)",
+                                  "value": "input8080"
+                                },
+                                "id": 332,
+                                "name": "Identifier",
+                                "src": "572:9:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 309,
+                                  "type": "int8",
+                                  "value": "_p"
+                                },
+                                "id": 333,
+                                "name": "Identifier",
+                                "src": "582:2:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 311,
+                                  "type": "uint32",
+                                  "value": "_ti"
+                                },
+                                "id": 334,
+                                "name": "Identifier",
+                                "src": "586:3:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 313,
+                                  "type": "uint32",
+                                  "value": "_te"
+                                },
+                                "id": 335,
+                                "name": "Identifier",
+                                "src": "591:3:3"
+                              }
+                            ],
+                            "id": 336,
+                            "name": "FunctionCall",
+                            "src": "572:23:3"
+                          }
+                        ],
+                        "id": 337,
+                        "name": "Assignment",
+                        "src": "539:56:3"
+                      }
+                    ],
+                    "id": 338,
+                    "name": "ExpressionStatement",
+                    "src": "539:56:3"
+                  }
+                ],
+                "id": 339,
+                "name": "Block",
+                "src": "491:109:3"
+              }
+            ],
+            "id": 340,
+            "name": "FunctionDefinition",
+            "src": "377:223:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "setAllowedID",
+              "payable": false,
+              "scope": 357,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_map",
+                      "scope": 356,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct lib8080.input8080Map storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "input8080Map",
+                          "referencedDeclaration": 301,
+                          "type": "struct lib8080.input8080Map storage pointer"
+                        },
+                        "id": 341,
+                        "name": "UserDefinedTypeName",
+                        "src": "627:12:3"
+                      }
+                    ],
+                    "id": 342,
+                    "name": "VariableDeclaration",
+                    "src": "627:25:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_id",
+                      "scope": 356,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 343,
+                        "name": "ElementaryTypeName",
+                        "src": "654:4:3"
+                      }
+                    ],
+                    "id": 344,
+                    "name": "VariableDeclaration",
+                    "src": "654:8:3"
+                  }
+                ],
+                "id": 345,
+                "name": "ParameterList",
+                "src": "626:37:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 346,
+                "name": "ParameterList",
+                "src": "671:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "allowedID",
+                                  "referencedDeclaration": 294,
+                                  "type": "mapping(uint256 => bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 342,
+                                      "type": "struct lib8080.input8080Map storage pointer",
+                                      "value": "_map"
+                                    },
+                                    "id": 347,
+                                    "name": "Identifier",
+                                    "src": "677:4:3"
+                                  }
+                                ],
+                                "id": 350,
+                                "name": "MemberAccess",
+                                "src": "677:14:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 344,
+                                  "type": "uint256",
+                                  "value": "_id"
+                                },
+                                "id": 349,
+                                "name": "Identifier",
+                                "src": "692:3:3"
+                              }
+                            ],
+                            "id": 351,
+                            "name": "IndexAccess",
+                            "src": "677:19:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 352,
+                            "name": "Literal",
+                            "src": "699:4:3"
+                          }
+                        ],
+                        "id": 353,
+                        "name": "Assignment",
+                        "src": "677:26:3"
+                      }
+                    ],
+                    "id": 354,
+                    "name": "ExpressionStatement",
+                    "src": "677:26:3"
+                  }
+                ],
+                "id": 355,
+                "name": "Block",
+                "src": "671:37:3"
+              }
+            ],
+            "id": 356,
+            "name": "FunctionDefinition",
+            "src": "604:104:3"
+          }
+        ],
+        "id": 357,
+        "name": "ContractDefinition",
+        "src": "26:685:3"
+      }
+    ],
+    "id": 358,
+    "name": "SourceUnit",
+    "src": "0:712:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "1519496910477": {
+      "events": {},
+      "links": {},
+      "address": "0xcab491ac23e2ce333324d96534d158fd5481eb6d"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-24T19:12:21.883Z"
+}

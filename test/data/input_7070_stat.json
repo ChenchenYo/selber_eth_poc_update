@@ -1,0 +1,24 @@
+{
+    "CpPwmDutyCyclePercent": 100,
+    "ActualChargeCurrentA": 0,
+    "MaxChargeCurrentA": 8,
+    "Errors": {
+      "Reserved1": false,
+      "Bad13ACable": false,
+      "BadPPValue": false,
+      "BadCPValue": false,
+      "StateF": false,
+      "Lock": false,
+      "Unlock": false,
+      "LDLockFail": false,
+      "Reserved9": false,
+      "Reserved10": false,
+      "StateD": false,
+      "ProtectionFailure": false,
+      "DiodeError": false,
+      "Reserved14": false,
+      "FaultCurrent": false,
+      "SelfTestError": false,
+      "RawError": "0000"
+    }
+}
